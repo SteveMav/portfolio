@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Détection de plaques d'immatriculation par IA – Projet de Computer Vision par Steve Mavuela utilisant Django, Python et YOLO fine-tuné.">
+    <title>Plate Detection – Steve Mavuela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== TOP NAVBAR ===== -->
+<nav class="top-nav">
+    <div class="container">
+        <a href="index.html" class="nav-brand">STEVE_MAVUELA</a>
+        <div class="nav-links">
+            <a href="index.html#hero">Accueil</a>
+            <a href="index.html#projects" class="active">Projets</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <button class="nav-terminal-btn" aria-label="Terminal">
+                <span class="material-symbols-outlined">terminal</span>
+            </button>
+            <a href="mailto:stevemavuela@gmail.com?subject=Contact%20depuis%20le%20portfolio" class="btn-primary">Hire Me</a>
+        </div>
+        <button class="hamburger" aria-label="Menu">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </div>
+</nav>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main>
+
+    <!-- ===== PROJECT DETAIL HERO ===== -->
+    <section class="project-detail-hero container">
+        <a href="index.html#projects" class="project-detail-back fade-up">
+            <span class="material-symbols-outlined">arrow_back</span>
+            Retour aux projets
+        </a>
+        <div class="fade-up">
+            <h1>Plate Detection<span class="neon-gradient-text">.</span></h1>
+            <p class="subtitle">AI / Computer Vision • Reconnaissance Automatique</p>
+            <p class="description">
+                Un système de détection et reconnaissance automatique de plaques d'immatriculation utilisant un modèle YOLO fine-tuné. Conçu pour fonctionner avec une grande précision dans des conditions d'éclairage variables.
+            </p>
+            <div class="project-detail-tags">
+                <span class="tech-tag">DJANGO</span>
+                <span class="tech-tag">PYTHON</span>
+                <span class="tech-tag">JAVASCRIPT</span>
+                <span class="tech-tag">TAILWIND CSS</span>
+                <span class="tech-tag">MYSQL</span>
+                <span class="tech-tag">YOLO</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECT IMAGE ===== -->
+    <div class="container fade-up">
+        <div class="project-detail-image">
+            <img src="plate-detection-preview.jpg" alt="Interface de détection de plaques d'immatriculation">
+        </div>
+    </div>
+
+    <!-- ===== PROJECT DETAILS ===== -->
+    <section class="project-detail-content container">
+        <div class="fade-up">
+            <h2>À propos du projet</h2>
+            <p>
+                Ce projet de Computer Vision vise à automatiser la détection et la reconnaissance de plaques d'immatriculation à partir d'images et de flux vidéo. Le système utilise un modèle YOLO (You Only Look Once) spécialement fine-tuné sur un dataset de plaques d'immatriculation pour atteindre une grande précision de détection.
+            </p>
+            <p>
+                L'application web construite avec Django permet aux utilisateurs de soumettre des images ou des flux vidéo et d'obtenir en temps réel la détection et la lecture des plaques d'immatriculation. Le modèle a été entraîné et optimisé pour fonctionner efficacement dans des conditions d'éclairage et des angles variés.
+            </p>
+        </div>
+
+        <div class="fade-up">
+            <h2>Fonctionnalités clés</h2>
+            <ul class="features-list">
+                <li>Détection en temps réel des plaques d'immatriculation</li>
+                <li>Modèle YOLO fine-tuné pour une haute précision</li>
+                <li>Interface web Django pour le traitement d'images</li>
+                <li>Support de multiples formats d'entrée (images, vidéo)</li>
+                <li>Extraction et lecture automatique du texte des plaques (OCR)</li>
+                <li>Dashboard de résultats avec historique des détections</li>
+            </ul>
+        </div>
+
+        <div class="fade-up">
+            <h2>Stack Technique</h2>
+            <p>
+                <strong>Backend :</strong> Django (Python) – Gestion des requêtes, API REST et traitement des résultats de détection.<br>
+                <strong>Frontend :</strong> JavaScript + Tailwind CSS – Interface utilisateur moderne et réactive.<br>
+                <strong>Base de données :</strong> MySQL – Stockage des résultats de détection et historique.<br>
+                <strong>Modèle IA :</strong> YOLO fine-tuné – Modèle de détection d'objets spécialisé, entraîné sur un dataset custom de plaques d'immatriculation.<br>
+                <strong>Librairies :</strong> OpenCV, Ultralytics, PyTorch – Traitement d'image et inférence du modèle.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT CTA ===== -->
+    <section class="contact container">
+        <div class="fade-up">
+            <h2>Prêt pour la <span class="highlight">prochaine étape ?</span></h2>
+            <div class="contact-buttons">
+                <a href="mailto:stevemavuela@gmail.com?subject=Contact%20depuis%20le%20portfolio" class="btn-primary">
+                    <span class="material-symbols-outlined">mail</span>
+                    Me Contacter
+                </a>
+                <a href="https://www.linkedin.com/in/steve-mavuela-41a832311/" target="_blank" class="btn-outline">
+                    <span class="material-symbols-outlined">person</span>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-brand">STEVE MAVUELA</div>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/steve-mavuela-41a832311/" target="_blank">LinkedIn</a>
+            <a href="mailto:stevemavuela@gmail.com">Email</a>
+        </div>
+        <div class="footer-copy">© 2024 Steve Mavuela. Engineered for performance.</div>
+    </div>
+</footer>
+
+<!-- ===== MOBILE BOTTOM NAV ===== -->
+<nav class="bottom-nav">
+    <a href="index.html#hero">
+        <span class="material-symbols-outlined">home</span>
+        <span class="label">Home</span>
+    </a>
+    <a href="index.html#projects" class="active">
+        <span class="material-symbols-outlined">layers</span>
+        <span class="label">Work</span>
+    </a>
+    <a href="index.html#skills">
+        <span class="material-symbols-outlined">memory</span>
+        <span class="label">Tech</span>
+    </a>
+    <a href="index.html#contact">
+        <span class="material-symbols-outlined">mail</span>
+        <span class="label">Mail</span>
+    </a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>

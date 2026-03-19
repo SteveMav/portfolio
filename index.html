@@ -3,66 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steve Mavuela</title>
+    <meta name="description" content="Steve Mavuela – Développeur Full-Stack spécialisé en Django, Python, JavaScript. Portfolio de projets web et IA.">
+    <title>Steve Mavuela – Développeur Full-Stack</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- COUVERTURE -->
-    <div class="cover">
-        <img class="cover-profile" src="profile.png"/ style="border-radius:50%;">
-        <h1>Steve Mavuela</h1>
-        <p>Etudiant en informatique</p>
-        
-        <div style="text-align: center;">
-            <a class="contact-button" href="mailto:stevemavuela@gmail.com?subject=Contact%20depuis%20portfoliosteve.com">ME CONTACTER</a>
-        </div>
-        <div class="cover-contact">
-            <p><a href="mailto:stevemavuela@gmail.com?subject=Contact%20depuis%20portfoliosteve.com">stevemavuela@gmail.com</a></p>
-            <p><a href="tel:+243833650168">+243 83 365 0168</a></p>
-        </div>
-    </div>
 
-    <!-- SECTION GRISE 1 -->
-    <div class="section section-grise1">
-        <div class="separateur"></div>
-        <p>Je développe <b>votre projet WEB</b> <b>de </b> A à Z</p>
+<!-- ===== TOP NAVBAR ===== -->
+<nav class="top-nav">
+    <div class="container">
+        <a href="#hero" class="nav-brand">STEVE_MAVUELA</a>
+        <div class="nav-links">
+            <a href="#hero" class="active">Accueil</a>
+            <a href="#projects">Projets</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <button class="nav-terminal-btn" aria-label="Terminal">
+                <span class="material-symbols-outlined">terminal</span>
+            </button>
+            <a href="mailto:stevemavuela@gmail.com?subject=Contact%20depuis%20le%20portfolio" class="btn-primary">Hire Me</a>
+        </div>
+        <button class="hamburger" aria-label="Menu">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
     </div>
+</nav>
 
-    <!-- SECTION BLANCHE -->
-    <div class="section">
-        <h2>En savoir plus</h2>
-        <img src="profile2.jpg" style="border-radius: 5px;" class="col-contenu"/>
-        <div class="col-contenu float-right">
-            <div class="texte-avec-ligne-verticale">
-                <p>Passionné par la programmation depuis le plus jeune age, je suis maintenant développeur  avec une experience qui ne cesse de grandir.<br><br>
-                     dans les domaines du <b>web, je propose mes services personnalisés pour des missions freelance.</p>
-                <a href="https://www.linkedin.com/in/steve-mavuela-41a832311/" target="_blank">En savoir plus sur mon profil</a>
+<!-- ===== MAIN CONTENT ===== -->
+<main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero container" id="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-content fade-up">
+            <span class="hero-label">Software Engineering Excellence</span>
+            <h1 class="hero-title">
+                Développeur Full-Stack :<br>
+                <span class="neon-gradient-text italic">Concevoir, Développer, Déployer</span><br>
+                de A à Z.
+            </h1>
+            <p class="hero-description">
+                Passionné par la programmation, je conçois des écosystèmes numériques performants à travers des architectures backend robustes et des interfaces frontend immersives. Spécialisé en Django, Python et JavaScript.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">Explorer les Projets</a>
+                <a href="#skills" class="btn-outline">Consulter Stack</a>
             </div>
         </div>
-        
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="projects container" id="projects">
+        <div class="section-header fade-up">
+            <div>
+                <h2>Projets Sélectionnés</h2>
+                <p>Des solutions allant du web à l'intelligence artificielle.</p>
+            </div>
+            <div class="section-header-line"></div>
+        </div>
+
+        <div class="bento-grid">
+            <!-- Project 1: StreamRDC (large) -->
+            <div class="project-card glass-card bento-large fade-up">
+                <div class="project-card-image aspect-video">
+                    <img src="streamrdc-preview.jpg" alt="StreamRDC – Gestion d'abonnements Netflix">
+                </div>
+                <div class="project-card-body">
+                    <div class="project-card-header">
+                        <div>
+                            <h3>StreamRDC</h3>
+                            <p>Gestion & Partage d'Abonnements Netflix • Paiements Mobile</p>
+                        </div>
+                        <span class="material-symbols-outlined">rocket_launch</span>
+                    </div>
+                    <p class="project-card-description">
+                        Une plateforme de gestion et partage d'abonnements Netflix en RDC. Connectez-vous, payez via M-Pesa, Orange Money ou Airtel Money, et obtenez votre abonnement en quelques secondes. Livraison instantanée, parrainage et qualité vidéo 4K.
+                    </p>
+                    <div class="project-card-tags">
+                        <span class="tech-tag">DJANGO</span>
+                        <span class="tech-tag">JAVASCRIPT</span>
+                        <span class="tech-tag">TAILWIND</span>
+                        <span class="tech-tag">MYSQL</span>
+                    </div>
+                    <div class="project-card-buttons">
+                        <a href="project-streamrdc.html" class="btn-outline btn-sm">
+                            <span class="material-symbols-outlined">info</span>
+                            Voir les détails
+                        </a>
+                        <a href="https://www.streamrdc.com" target="_blank" class="btn-primary btn-sm">
+                            <span class="material-symbols-outlined">open_in_new</span>
+                            Visiter le site
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Plate Detection (small) -->
+            <div class="project-card glass-card bento-small fade-up">
+                <div class="project-card-image aspect-square">
+                    <img src="plate-detection-preview.jpg" alt="Détection de plaques d'immatriculation congolaises">
+                </div>
+                <div class="project-card-body">
+                    <h3 style="font-family: var(--font-headline); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">Plate Detection</h3>
+                    <p class="project-card-subtitle">AI / Computer Vision</p>
+                    <p class="project-card-text-sm">
+                        Détection automatique de plaques d'immatriculation congolaises via un modèle YOLO fine-tuné. Haute précision en conditions de circulation réelles.
+                    </p>
+                    <div class="project-card-tags">
+                        <span class="tech-tag tech-tag-sm">DJANGO</span>
+                        <span class="tech-tag tech-tag-sm">PYTHON</span>
+                        <span class="tech-tag tech-tag-sm">YOLO</span>
+                    </div>
+                    <div class="project-card-buttons" style="margin-top: 1rem;">
+                        <a href="project-plate-detection.html" class="btn-outline btn-sm">
+                            <span class="material-symbols-outlined">info</span>
+                            Voir les détails
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="skills-header fade-up">
+                <h2>Technical Armory</h2>
+                <div class="skills-header-bar"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="fade-up">
+                    <div class="skill-category-header">
+                        <span class="material-symbols-outlined">web</span>
+                        <h3>Frontend</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span>HTML / CSS</span>
+                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:100%"></div></div>
+                        </li>
+                        <li class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:90%"></div></div>
+                        </li>
+                        <li class="skill-item">
+                            <span>Tailwind CSS</span>
+                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:85%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Backend -->
+                <div class="fade-up">
+                    <div class="skill-category-header">
+                        <span class="material-symbols-outlined">database</span>
+                        <h3>Backend</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span>Django / Python</span>
+                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:95%"></div></div>
+                        </li>
+                        <li class="skill-item">
+                            <span>MySQL</span>
+                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:85%"></div></div>
+                        </li>
+                        <li class="skill-item">
+                            <span>REST APIs</span>
+                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:90%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- AI / Data -->
+                <div class="fade-up">
+                    <div class="skill-category-header">
+                        <span class="material-symbols-outlined">memory</span>
+                        <h3>AI / Data</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span>Python / PyTorch</span>
+                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:80%"></div></div>
+                        </li>
+                        <li class="skill-item">
+                            <span>Computer Vision (YOLO)</span>
+                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:85%"></div></div>
+                        </li>
+                        <li class="skill-item">
+                            <span>Data Analysis</span>
+                            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:75%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact container" id="contact">
+        <div class="fade-up">
+            <h2>Prêt pour la <span class="highlight">prochaine étape ?</span></h2>
+            <div class="contact-buttons">
+                <a href="mailto:stevemavuela@gmail.com?subject=Contact%20depuis%20le%20portfolio" class="btn-primary">
+                    <span class="material-symbols-outlined">mail</span>
+                    Me Contacter
+                </a>
+                <a href="https://www.linkedin.com/in/steve-mavuela-41a832311/" target="_blank" class="btn-outline">
+                    <span class="material-symbols-outlined">person</span>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-brand">STEVE MAVUELA</div>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/steve-mavuela-41a832311/" target="_blank">LinkedIn</a>
+            <a href="mailto:stevemavuela@gmail.com">Email</a>
+        </div>
+        <div class="footer-copy">© 2024 Steve Mavuela. Engineered for performance.</div>
     </div>
+</footer>
 
-    <!-- SECTION GRISE 2 -->
-    <div class="section section-grise2">
-        <h2>Portfolio</h2>
-        <center>
+<!-- ===== MOBILE BOTTOM NAV ===== -->
+<nav class="bottom-nav">
+    <a href="#hero" class="active">
+        <span class="material-symbols-outlined">home</span>
+        <span class="label">Home</span>
+    </a>
+    <a href="#projects">
+        <span class="material-symbols-outlined">layers</span>
+        <span class="label">Work</span>
+    </a>
+    <a href="#skills">
+        <span class="material-symbols-outlined">memory</span>
+        <span class="label">Tech</span>
+    </a>
+    <a href="#contact">
+        <span class="material-symbols-outlined">mail</span>
+        <span class="label">Mail</span>
+    </a>
+</nav>
 
-        <table class="col-portfolio" style="display:inline-block">
-            <tr>
-                <td><div class="barre-verticale"></div></td>
-                <td><a href="portfolio-site-aukpaye.html"><img style="width:100%" src="projet1small.png" style="border-radius: 5px solid rgb(27, 27, 27);"></a></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td align="center"><a href="portfolio-site-aukpaye.html">Site web "auketudiant"</a></td>
-            </tr>
-        </table>
-    </center>
-
-       
-    </div>
-
-    <!-- SECTION BLANCHE FRAME -->
-    <iframe src="contact-frame.html" scrolling="no"/>
+<script src="script.js"></script>
 </body>
 </html>
