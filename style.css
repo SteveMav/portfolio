@@ -574,9 +574,9 @@ ul { list-style: none; }
 
 .contact-buttons {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
 /* =====================================================
@@ -828,10 +828,6 @@ ul { list-style: none; }
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .contact-buttons {
-        flex-direction: row;
-        justify-content: center;
-    }
 
     .footer .container {
         flex-direction: row;
@@ -906,11 +902,6 @@ ul { list-style: none; }
         padding: 4rem 0;
     }
 
-    .contact-buttons .btn-primary,
-    .contact-buttons .btn-outline {
-        width: 100%;
-        justify-content: center;
-    }
 
     body {
         padding-bottom: 5rem;
